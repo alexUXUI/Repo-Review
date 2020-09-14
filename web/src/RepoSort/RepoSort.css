@@ -1,0 +1,61 @@
+.repo-sort .ui.buttons .button:first-child {
+    text-align: initial;
+    min-width: 175px;
+  }
+  
+  .ui.basic.buttons {
+    width:  260px;
+    border: none !important;
+  }
+
+  .repo-sort .ui.buttons:not(.basic):not(.inverted)>.button, .ui.buttons>.ui.button:not(.basic):not(.inverted) {
+    border: none;
+  }
+  
+  .label {
+    border: 1px solid rgba(34,36,38,.15);
+    color: rgba(0,0,0,.6)!important;
+    box-shadow: none;
+    margin: auto;
+    align-self: flex-start;
+    width: 240px;
+    background: -webkit-repeating-linear-gradient();
+    text-align: left;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .repo-sort .ui.buttons.label .button {
+    margin: 0;
+    background: transparent;
+    border-radius: 0;
+    /* background: rgb(238, 238, 238); */
+}
+
+.ui.icon.button:hover {
+  border-radius: 0 !important;
+  border: none !important
+}
+
+.repo-sort .ui.icon.button:active {
+    background: #f6f8fa;
+    border: none
+}
+
+.repo-sort .ui.icon.button:hover {
+    background: #f6f8fa;
+    border: none
+}
+
+.repo-sort .ui.icon.button:focus {
+    /* color: green; */
+    background: #f6f8fa;
+    border: none
+}
+
+.repo-sort .ui.icon.button-repo-search.button:focus {
+    color: red
+}

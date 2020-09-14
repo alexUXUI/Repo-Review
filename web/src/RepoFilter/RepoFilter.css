@@ -1,0 +1,168 @@
+.column--left .repo-filter {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    justify-content: center;
+}
+
+.column--left .repo-filter .language-list {
+  max-height: 365px;
+  overflow-x: scroll;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0px 5px 28px -13px rgba(0,0,0,0.15);
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  width: 260px;
+  overflow-x: hidden
+}
+
+.language-list {
+  min-height: 400px !important;
+  height: 400px;
+  display: block;
+}
+
+.no-language-filters {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.no-language-filters p {
+  color: rgb(121, 121, 121);
+  width: 200px;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+.sliders {
+  color: #dee1e4;
+}
+
+.column--left .repo-filter .ui.list.language-list .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+}
+
+.toggle-all-filters {
+  display: flex;
+  justify-content: flex-end;
+  width: 260px;
+  margin: 10px auto -5px auto;
+}
+
+/** toggles **/
+.ui.fitted.toggle.checkbox {
+  width: 2rem !important;
+}
+
+.ui.fitted.toggle.checkbox::after {
+  width: 2rem !important;
+}
+
+.ui.fitted.toggle.checkbox::before {
+  width: 2rem !important;
+}
+
+.ui.toggle.checkbox input:checked~.box::after, .ui.toggle.checkbox input:checked~label::after {
+  left: 1.60rem !important;
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15), 0 0 0 1px rgba(34,36,38,.15) inset;
+}
+
+.ui.toggle.checkbox .box:before, .ui.toggle.checkbox label:before {
+  display: block;
+  position: absolute;
+  content: '';
+  z-index: 1;
+  transform: none;
+  border: none;
+  top: 0;
+  background: rgba(0,0,0,.05);
+  box-shadow: none;
+  width: 3rem !important;
+  height: 1.5rem;
+  border-radius: 500rem;
+}
+
+.filter-results {
+  font-size: 12px;
+}
+
+.repo-filter .ui.list>.item:after, .ui.list>.list>.item, ol.ui.list>li:first-child:after, ul.ui.list>li:first-child:after {
+  display: none !important;
+}
+
+.repo-filter .ui.buttons .button:first-child {
+  text-align: initial;
+  min-width: 175px;
+}
+
+.repo-filter .ui.basic.icon.button {
+  border: none;
+}
+
+.repo-filter .ui.basic.icon.button {
+  border-radius: 0 !important;
+}
+
+.repo-filter .ui.basic.icon.button:active i {
+    background: #f6f8fa;
+}
+
+.repo-filter .ui.basic.icon.button:hover i {
+    background: #f6f8fa;
+}
+
+.repo-filter .ui.basic.icon.button:focus i {
+    background: #f6f8fa;
+}
+
+.repo-filter .ui.icon.button {
+  margin: 0
+}
+
+.info-circle {
+  color: black;
+}
+
+.info-circle.ui.icon {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.info-circle.ui.icon:hover {
+  background: transparent;
+}
+
+.list-item--loading {
+  height: 20px;
+  width: 100%;
+}
+
+.loading-list-item {
+  height: 20px;
+  width: 100%;
+  margin: 7px 0 7px 0;
+}
+
+.filter-language {
+  width: 120px;
+  height: 30px;
+}
+
+.filter-toggle {
+  width: 50px;
+  height: 30px;
+}
+
+.label-title {
+  margin-right: 10px;
+}
