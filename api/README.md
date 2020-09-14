@@ -2,17 +2,10 @@
 
 #### Up and Running:
 
-There are two ways to start this application.
 
-**1) Docker**
+**1) Node**
 ```shell
-$ docker-compose build
-$ docker-compose up
-```
-
-**2) Node**
-```shell
-$ npm i && npm serve
+$ npm i && npm run build:dev && npm serve`
 ```
 --- 
 
