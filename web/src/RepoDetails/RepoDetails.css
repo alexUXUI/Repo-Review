@@ -1,0 +1,23 @@
+.repo-detail {
+    width: fill-available;
+    display: block;
+  }
+  
+  .readme {
+    background: white;
+    /* width: 100%; */
+    /* max-width: 600px; */
+    border: 1px solid rgb(225, 225, 225);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px 10px 50px 10px;
+    border-radius: 6px;
+    overflow-x: scroll;
+  }
+  
+  .readme img {
+    max-width: 100%;
+  }
+  
+  
