@@ -19,7 +19,7 @@ services:
         expose:
             - 6379
         environment:
-            - REDIS_URL=redis://h:p668cd797b7d12f8dee8bf393587a5d0ec61c0d34f1624445a971b405edad29cc@ec2-35-168-104-166.compute-1.amazonaws.com:22429
+            - REDIS_URL=redis://cache
             - DEV_PORT=3000
             - DEV_REDIS_PORT=6379
             - DEV_REDIS_HOST=redis
