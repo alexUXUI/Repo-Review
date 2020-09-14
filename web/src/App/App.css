@@ -1,0 +1,146 @@
+.App {
+  display: flex;
+  height: 100vh;
+  background: #434343;
+}
+
+.header {
+  width: 260px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.header-group {
+  display: flex;
+  align-items: baseline;
+  width: 260px;
+  justify-content: center;
+}
+
+/** Layout **/
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: scroll;
+  border: 1px solid #ccc;
+}
+
+.repo-search {
+  padding-top: 20px;
+  width: 320px;
+  min-width: 320px;
+  background: #f6f8fa;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+} 
+
+.repo-list {
+  justify-content: center;
+  background: #f6f8fa;
+  color: #586069;
+  resize: horizontal;
+  height: 100%;
+  display: block;
+  width: 40%;
+} 
+
+.repo-detail {
+  justify-content: center;
+  background: #f6f8fa;
+  color: #586069;
+  resize: horizontal;
+  display: block;
+  height: 100%;
+}
+
+/** Global prompt shown for no data use case **/
+.prompt {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30vh;
+  text-align: center;
+}
+
+#prompt--icon {
+  color:#dee1e4;
+  margin-bottom: 20px;
+}
+
+.prompt p {
+  margin: 5px 0 0 0;
+}
+
+/** Global font color **/
+h1, h2, h3, h4, p, section, main {
+  color: rgba(82, 82, 82, 1);
+}
+
+/** Global BTNs **/
+.ui.basic.button, .ui.basic.buttons .button {
+  border: none;
+  box-shadow: none;
+}
+
+.App .ui.basic.button, .ui.basic.buttons .button:hover {
+  border: none;
+  box-shadow: none;
+}
+
+/** Global List reset **/
+.ui.list>.item:after, .ui.list>.list>.item, ol.ui.list>li:first-child:after, ul.ui.list>li:first-child:after {
+  display: none;
+}
+
+/** Loading styles **/
+.loading-skeleton {
+  position: relative;
+  background-color: #F3F3F3;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.loading-skeleton:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(239, 239, 239, 0) -0.05%, #CCCCCC 49.43%, rgba(239, 239, 239, 0) 99.95%);
+  animation-duration: 3s;
+  animation-name: slide;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  50% {
+    transfrom: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.name-loading {
+  width: 100px;
+  height: 20px;
+}
+
+.instructions h4 {
+  font-size: 24px;
+}
+
+.instructions h5 {
+  font-size: 20px;
+}
+
+.instructions p {
+  font-size: 18px;
+}
