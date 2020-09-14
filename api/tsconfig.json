@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "dist",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2017",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules",
+    "bin",
+    "./tests"
+  ],
+  "types": [
+    "node",
+    "mocha",
+    "express"
+  ],
+  "compileOnSave": true
+}
