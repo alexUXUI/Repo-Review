@@ -1,0 +1,34 @@
+version: '3'
+services:
+    
+    client:
+        build: ./client
+        ports:
+            - '8081:80'
+        environment:
+            - CHOKIDAR_USEPOLLING=true
+        depends_on:
+            - api
+
+    api:
+        build: ./api
+        ports:
+            - '8080:3000'
+        links:
+            - redis
+        expose:
+            - 6379
+        environment:
+            - REDIS_URL=redis://h:p668cd797b7d12f8dee8bf393587a5d0ec61c0d34f1624445a971b405edad29cc@ec2-35-168-104-166.compute-1.amazonaws.com:22429
+            - DEV_PORT=3000
+            - DEV_REDIS_PORT=6379
+            - DEV_REDIS_HOST=redis
+        depends_on:
+            - redis
+
+    redis:
+        image: redis
+        container_name: cache
+        command: ["redis-server", "--bind", "0.0.0.0", "--port", "6379"]
+        restart:
+            always
