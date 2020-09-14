@@ -5,7 +5,7 @@
 
 **1) Node**
 ```shell
-$ npm i && npm run build:dev && npm serve`
+$ npm i && npm run build:dev && npm serve
 ```
 --- 
 
