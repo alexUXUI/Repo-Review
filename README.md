@@ -26,7 +26,7 @@ To start the app with node, we need to seperately start the client and the api.
 **2.a) Staring the api:**
 ```shell
 $ cd ./api
-$ npm i --silent && npm run build && npm run:serve
+$ npm i --silent && npm run build:dev && npm run serve
 ```
 
 This starts the API server on port `:3000`
