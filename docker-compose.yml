@@ -19,7 +19,7 @@ services:
         expose:
             - 6379
         environment:
-            - REDIS_URL=redis://cache
+            - REDIS_URL=redis://cahce
             - DEV_PORT=3000
             - DEV_REDIS_PORT=6379
             - DEV_REDIS_HOST=redis
